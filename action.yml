@@ -1,4 +1,4 @@
-name: setup-maestro
+name: setup-maestro-action
 description: GitHub Actions setup CLI template
 author: remarkablemark
 inputs:
