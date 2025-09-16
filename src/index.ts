@@ -1,55 +1,32 @@
 import path from 'node:path';
 
 import { addPath, getInput, setFailed } from '@actions/core';
-import { exec } from '@actions/exec';
-import {
-  cacheFile,
-  downloadTool,
-  extractTar,
-  extractZip,
-  find,
-} from '@actions/tool-cache';
+import { cacheFile, downloadTool, extractZip, find } from '@actions/tool-cache';
 
-import { getBinaryPath, getDownloadObject } from './utils';
+import { getDownloadUrl, getFilename } from './utils';
 
-const DEFAULT_NAME = 'gh';
+const TOOL_NAME = 'maestro';
 
 export async function run() {
   try {
-    // Get the version and name of the tool to be installed
-    const cliVersion = getInput('cli-version');
-    const cliName = getInput('cli-name') || DEFAULT_NAME;
-    const toolName = cliName;
+    // Get the version of the tool to be installed
+    const cliVersion = getInput('version');
+    const filename = getFilename(TOOL_NAME);
 
     // Find previously cached directory (if applicable)
-    let binaryPath = find(toolName, cliVersion);
+    let binaryPath = find(TOOL_NAME, cliVersion);
     const isCached = Boolean(binaryPath);
 
     /* istanbul ignore else */
     if (!isCached) {
-      // Download the specific version of the tool (e.g., tarball/zipball)
-      const download = getDownloadObject(cliVersion);
-      const pathToTarball = await downloadTool(download.url);
+      // Download the specific version of the tool
+      const pathToZipball = await downloadTool(getDownloadUrl(cliVersion));
 
-      // Extract the tarball/zipball onto the host runner
-      const extract = download.url.endsWith('.zip') ? extractZip : extractTar;
-      const extractDirectory = await extract(pathToTarball);
+      // Extract the zipball onto the host runner
+      const extractDirectory = await extractZip(pathToZipball);
 
       // Get the binary
-      const binaryDirectory = path.join(
-        extractDirectory,
-        download.binaryDirectory,
-      );
-      binaryPath = getBinaryPath(binaryDirectory, cliName);
-
-      // Rename the binary
-      /* istanbul ignore else */
-      if (cliName !== DEFAULT_NAME) {
-        await exec('mv', [
-          getBinaryPath(binaryDirectory, DEFAULT_NAME),
-          binaryPath,
-        ]);
-      }
+      binaryPath = path.join(extractDirectory, 'maestro', 'bin', filename);
     }
 
     // Expose the tool by adding it to the PATH
@@ -58,7 +35,7 @@ export async function run() {
     // Cache the tool
     /* istanbul ignore else */
     if (!isCached) {
-      await cacheFile(binaryPath, cliName, toolName, cliVersion);
+      await cacheFile(binaryPath, filename, TOOL_NAME, cliVersion);
     }
   } catch (error) {
     if (error instanceof Error) {

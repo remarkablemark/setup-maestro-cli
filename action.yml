@@ -2,14 +2,10 @@ name: setup-maestro
 description: GitHub Actions setup CLI template
 author: remarkablemark
 inputs:
-  cli-version:
+  version:
     description: CLI version
     required: false
-    default: 2.49.0
-  cli-name:
-    description: CLI name
-    required: false
-    default: gh
+    default: 2.0.3
 runs:
   using: node24
   main: dist/index.js

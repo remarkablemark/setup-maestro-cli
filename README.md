@@ -15,8 +15,11 @@ jobs:
   setup-maestro:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup setup-maestro
+      - name: Setup Maestro
         uses: remarkablemark/setup-maestro@v1
+
+      - name: See help
+        run: maestro --help
 ```
 
 ## Usage
@@ -31,24 +34,14 @@ See [action.yml](action.yml)
 
 ## Inputs
 
-### `cli-version`
+### `version`
 
-**Optional**: The CLI [version](https://github.com/cli/cli/releases). Defaults to [`2.49.0`](https://github.com/cli/cli/releases/tag/v2.49.0):
-
-```yaml
-- uses: remarkablemark/setup-maestro@v1
-  with:
-    cli-version: 2.49.0
-```
-
-### `cli-name`
-
-**Optional**: The CLI name. Defaults to `gh`:
+**Optional**: The CLI [version](https://github.com/mobile-dev-inc/Maestro/releases). Defaults to [`2.0.3`](https://github.com/mobile-dev-inc/Maestro/releases/tag/cli-2.0.3):
 
 ```yaml
 - uses: remarkablemark/setup-maestro@v1
   with:
-    cli-name: gh
+    version: 2.0.3
 ```
 
 ## License
