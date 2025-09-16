@@ -2,7 +2,7 @@
 
 [![version](https://badgen.net/github/release/remarkablemark/setup-maestro)](https://github.com/remarkablemark/setup-maestro/releases)
 [![build](https://github.com/remarkablemark/setup-maestro/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/setup-maestro/actions/workflows/build.yml)
-[![codecov](https://codecov.io/gh/remarkablemark/setup-maestro/graph/badge.svg?token=PGPJ2Q8HUO)](https://codecov.io/gh/remarkablemark/setup-maestro)
+[![codecov](https://codecov.io/gh/remarkablemark/setup-maestro/graph/badge.svg?token=mI5QlfDaz0)](https://codecov.io/gh/remarkablemark/setup-maestro)
 
 📱 Set up GitHub Actions with [Maestro](https://github.com/mobile-dev-inc/Maestro) CLI.
 
