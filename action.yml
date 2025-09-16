@@ -1,4 +1,4 @@
-name: setup-maestro-action
+name: setup-maestro-cli
 description: Set up GitHub Actions with Maestro CLI
 author: remarkablemark
 inputs:
