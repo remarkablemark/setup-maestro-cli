@@ -50,7 +50,7 @@ describe.each(['darwin', 'win32', 'linux'])('when OS is %p', (os) => {
 
     expect(mockedTc.cacheFile).toHaveBeenCalledWith(
       expect.stringContaining(`/bin/${TOOL_NAME}`),
-      expect.stringContaining(TOOL_NAME),
+      os === 'win32' ? `${TOOL_NAME}.bat` : TOOL_NAME,
       TOOL_NAME,
       cliVersion,
     );
