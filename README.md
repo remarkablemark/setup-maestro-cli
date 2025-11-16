@@ -1,6 +1,6 @@
 # setup-maestro-cli
 
-[![version](https://badgen.net/github/release/remarkablemark/setup-maestro-cli)](https://github.com/remarkablemark/setup-maestro-cli/releases)
+[![version](https://img.shields.io/github/release/remarkablemark/setup-maestro-cli)](https://github.com/remarkablemark/setup-maestro-cli/releases)
 [![build](https://github.com/remarkablemark/setup-maestro-cli/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/setup-maestro-cli/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/remarkablemark/setup-maestro-cli/graph/badge.svg?token=mI5QlfDaz0)](https://codecov.io/gh/remarkablemark/setup-maestro-cli)
 
