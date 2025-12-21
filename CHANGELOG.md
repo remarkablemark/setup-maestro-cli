@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.1...v1.0.2) (2025-12-21)
+
+
+### Build System
+
+* **deps:** bump @actions/core from 1.11.1 to 2.0.1 ([#72](https://github.com/remarkablemark/setup-maestro-cli/issues/72)) ([ea1e4d0](https://github.com/remarkablemark/setup-maestro-cli/commit/ea1e4d0b1f48583c9aae172cbc9fa92f5f032a4e))
+
 ## [1.0.1](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.0...v1.0.1) (2025-09-16)
 
 
