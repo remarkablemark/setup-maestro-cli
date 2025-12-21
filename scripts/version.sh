@@ -13,7 +13,7 @@ LATEST_VERSION=$(
     --exclude-pre-releases \
     --json name \
     --jq '.[0].name' | \
-  cut -c5-
+  awk '{print $2}'
 )
 
 echo "Latest version: $LATEST_VERSION"
