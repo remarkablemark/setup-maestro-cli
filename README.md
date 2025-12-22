@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="500" alt="Maestro logo" src="https://raw.githubusercontent.com/remarkablemark/setup-maestro-cli/master/maestro-logo.svg" />
+</p>
+
 # setup-maestro-cli
 
 [![version](https://img.shields.io/github/release/remarkablemark/setup-maestro-cli)](https://github.com/remarkablemark/setup-maestro-cli/releases)
