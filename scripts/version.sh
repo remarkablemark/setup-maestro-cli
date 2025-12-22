@@ -41,7 +41,7 @@ git checkout -b $BRANCH
 git commit -am \
   "build(deps): bump maestro from $CURRENT_VERSION to $LATEST_VERSION" \
   -m "Release-As: $(jq -r .version package.json | awk -F. '/[0-9]+\./{$NF++;print}' OFS=.)" \
-  -m "https://github.com/mobile-dev-inc/Maestro/releases/tag/v$LATEST_VERSION"
+  -m "https://github.com/mobile-dev-inc/Maestro/releases/tag/cli-$LATEST_VERSION"
 git push --force origin $BRANCH
 gh pr create --assignee remarkablemark --fill --reviewer remarkablemark
 
