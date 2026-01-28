@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" alt="Maestro logo" src="https://raw.githubusercontent.com/remarkablemark/setup-maestro-cli/master/maestro-logo.svg" />
+  <img width="500" alt="Maestro logo" src="https://github.com/remarkablemark/setup-maestro-cli/blob/master/maestro-logo.svg?raw=true" />
 </p>
 
 # setup-maestro-cli
