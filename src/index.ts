@@ -1,4 +1,4 @@
-import path from 'node:path';
+import { dirname, join } from 'node:path';
 
 import { addPath, getInput, setFailed } from '@actions/core';
 import { cacheFile, downloadTool, extractZip, find } from '@actions/tool-cache';
@@ -26,11 +26,11 @@ export async function run() {
       const extractDirectory = await extractZip(pathToZipball);
 
       // Get the binary
-      binaryPath = path.join(extractDirectory, 'maestro', 'bin', filename);
+      binaryPath = join(extractDirectory, 'maestro', 'bin', filename);
     }
 
     // Expose the tool by adding it to the PATH
-    addPath(path.dirname(binaryPath));
+    addPath(dirname(binaryPath));
 
     // Cache the tool
     /* istanbul ignore else */

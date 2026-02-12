@@ -1,20 +1,31 @@
-import os from 'node:os';
+import { jest } from '@jest/globals';
 
-import * as core from '@actions/core';
-import * as tc from '@actions/tool-cache';
+const mockedOs = {
+  platform: jest.fn<() => NodeJS.Platform>(),
+};
 
-import { run } from '.';
+const mockedCore = {
+  getInput: jest.fn<(input: string) => string>(),
+  addPath: jest.fn<(path: string) => void>(),
+  info: jest.fn<(message: string) => void>(),
+  setFailed: jest.fn<(message: string) => void>(),
+};
 
-jest.mock('@actions/core');
-jest.mock('@actions/tool-cache');
-jest.mock('node:os');
+const mockedTc = {
+  downloadTool: jest.fn<() => Promise<string>>(),
+  extractZip: jest.fn<() => Promise<string>>(),
+  cacheFile: jest.fn(),
+  find: jest.fn(),
+};
 
-const mockedCore = jest.mocked(core);
-const mockedTc = jest.mocked(tc);
-const mockedOs = jest.mocked(os);
+jest.unstable_mockModule('node:os', () => mockedOs);
+jest.unstable_mockModule('@actions/core', () => mockedCore);
+jest.unstable_mockModule('@actions/tool-cache', () => mockedTc);
+
+const { run } = await import('.');
 
 beforeEach(() => {
-  jest.resetAllMocks();
+  jest.clearAllMocks();
 });
 
 const TOOL_NAME = 'maestro';

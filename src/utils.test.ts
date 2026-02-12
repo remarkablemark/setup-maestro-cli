@@ -1,9 +1,12 @@
-import os from 'node:os';
+import { jest } from '@jest/globals';
 
-import { getDownloadUrl, getFilename } from './utils';
+const mockedOs = {
+  platform: jest.fn<() => NodeJS.Platform>(),
+};
 
-jest.mock('node:os');
-const mockedOs = jest.mocked(os);
+jest.unstable_mockModule('node:os', () => mockedOs);
+
+const { getDownloadUrl, getFilename } = await import('./utils');
 
 describe('getDownloadUrl', () => {
   it('returns download url', () => {
@@ -18,16 +21,16 @@ describe('getFilename', () => {
   const name = 'maestro';
 
   beforeEach(() => {
-    jest.resetAllMocks();
+    jest.clearAllMocks();
   });
 
   it.each(['darwin', 'linux'])('returns filename for %p', (platform) => {
-    mockedOs.platform.mockReturnValueOnce(platform as NodeJS.Platform);
+    mockedOs.platform.mockReturnValue(platform as NodeJS.Platform);
     expect(getFilename(name)).toBe(name);
   });
 
   it('returns filename for win32', () => {
-    mockedOs.platform.mockReturnValueOnce('win32');
+    mockedOs.platform.mockReturnValue('win32');
     const name = 'name';
     expect(getFilename(name)).toBe(`${name}.bat`);
   });

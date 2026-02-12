@@ -1,4 +1,4 @@
-import os from 'node:os';
+import { platform } from 'node:os';
 
 /**
  * Gets download URL.
@@ -19,5 +19,5 @@ export function getDownloadUrl(version: string) {
  * @returns - Binary path
  */
 export function getFilename(name: string) {
-  return name + (os.platform() === 'win32' ? '.bat' : '');
+  return name + (platform() === 'win32' ? '.bat' : '');
 }
