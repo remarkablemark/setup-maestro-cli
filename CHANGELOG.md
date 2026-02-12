@@ -1,52 +1,52 @@
 # Changelog
 
-## [1.0.6](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.5...v1.0.6) (2026-01-28)
-
+## [1.0.7](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.6...v1.0.7) (2026-02-12)
 
 ### Build System
 
-* **deps:** bump @actions/core from 2.0.2 to 2.0.3 ([#108](https://github.com/remarkablemark/setup-maestro-cli/issues/108)) ([cd070ac](https://github.com/remarkablemark/setup-maestro-cli/commit/cd070acc20f9a25cf1f20641a235c6ccf086e4bf))
-* **deps:** bump @actions/tool-cache from 3.0.0 to 3.0.1 ([#107](https://github.com/remarkablemark/setup-maestro-cli/issues/107)) ([b6859b7](https://github.com/remarkablemark/setup-maestro-cli/commit/b6859b797cdfe0496b6a21ece30b8aacf92b3818))
+- **deps:** bump @actions/core from 2.0.3 to 3.0.0 ([8185882](https://github.com/remarkablemark/setup-maestro-cli/commit/8185882ffa3be13542aab324504f807b2eba09ee))
+- **deps:** bump @actions/tool-cache from 3.0.1 to 4.0.0 ([265537e](https://github.com/remarkablemark/setup-maestro-cli/commit/265537e19a993bc0b59fdc919527ef7abbced02d))
+
+## [1.0.6](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.5...v1.0.6) (2026-01-28)
+
+### Build System
+
+- **deps:** bump @actions/core from 2.0.2 to 2.0.3 ([#108](https://github.com/remarkablemark/setup-maestro-cli/issues/108)) ([cd070ac](https://github.com/remarkablemark/setup-maestro-cli/commit/cd070acc20f9a25cf1f20641a235c6ccf086e4bf))
+- **deps:** bump @actions/tool-cache from 3.0.0 to 3.0.1 ([#107](https://github.com/remarkablemark/setup-maestro-cli/issues/107)) ([b6859b7](https://github.com/remarkablemark/setup-maestro-cli/commit/b6859b797cdfe0496b6a21ece30b8aacf92b3818))
 
 ## [1.0.5](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.4...v1.0.5) (2026-01-13)
 
-
 ### Build System
 
-* **deps:** bump maestro from 2.0.10 to 2.1.0 ([5ec0efb](https://github.com/remarkablemark/setup-maestro-cli/commit/5ec0efb076d3f9277a2294020880aa7125984c6e))
+- **deps:** bump maestro from 2.0.10 to 2.1.0 ([5ec0efb](https://github.com/remarkablemark/setup-maestro-cli/commit/5ec0efb076d3f9277a2294020880aa7125984c6e))
 
 ## [1.0.4](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.3...v1.0.4) (2026-01-09)
 
-
 ### Build System
 
-* **deps:** bump @actions/core from 2.0.1 to 2.0.2 ([#89](https://github.com/remarkablemark/setup-maestro-cli/issues/89)) ([936076c](https://github.com/remarkablemark/setup-maestro-cli/commit/936076c48cd4c8a95829d6570e0d5bf395129896))
-* **deps:** bump @actions/tool-cache from 2.0.2 to 3.0.0 ([#88](https://github.com/remarkablemark/setup-maestro-cli/issues/88)) ([a5ea410](https://github.com/remarkablemark/setup-maestro-cli/commit/a5ea41070589b865306298cc2fde897b80dea961))
+- **deps:** bump @actions/core from 2.0.1 to 2.0.2 ([#89](https://github.com/remarkablemark/setup-maestro-cli/issues/89)) ([936076c](https://github.com/remarkablemark/setup-maestro-cli/commit/936076c48cd4c8a95829d6570e0d5bf395129896))
+- **deps:** bump @actions/tool-cache from 2.0.2 to 3.0.0 ([#88](https://github.com/remarkablemark/setup-maestro-cli/issues/88)) ([a5ea410](https://github.com/remarkablemark/setup-maestro-cli/commit/a5ea41070589b865306298cc2fde897b80dea961))
 
 ## [1.0.3](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.2...v1.0.3) (2025-12-22)
 
-
 ### Build System
 
-* **deps:** bump maestro from 2.0.3 to 2.0.10 ([28e8232](https://github.com/remarkablemark/setup-maestro-cli/commit/28e8232bb08b105c7882d84406c00e5169790445))
+- **deps:** bump maestro from 2.0.3 to 2.0.10 ([28e8232](https://github.com/remarkablemark/setup-maestro-cli/commit/28e8232bb08b105c7882d84406c00e5169790445))
 
 ## [1.0.2](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.1...v1.0.2) (2025-12-21)
 
-
 ### Build System
 
-* **deps:** bump @actions/core from 1.11.1 to 2.0.1 ([#72](https://github.com/remarkablemark/setup-maestro-cli/issues/72)) ([ea1e4d0](https://github.com/remarkablemark/setup-maestro-cli/commit/ea1e4d0b1f48583c9aae172cbc9fa92f5f032a4e))
+- **deps:** bump @actions/core from 1.11.1 to 2.0.1 ([#72](https://github.com/remarkablemark/setup-maestro-cli/issues/72)) ([ea1e4d0](https://github.com/remarkablemark/setup-maestro-cli/commit/ea1e4d0b1f48583c9aae172cbc9fa92f5f032a4e))
 
 ## [1.0.1](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.0...v1.0.1) (2025-09-16)
 
-
 ### Miscellaneous Chores
 
-* release 1.0.1 ([0872c25](https://github.com/remarkablemark/setup-maestro-cli/commit/0872c2569c015e8a23b4e8f5482649ecb76df676))
+- release 1.0.1 ([0872c25](https://github.com/remarkablemark/setup-maestro-cli/commit/0872c2569c015e8a23b4e8f5482649ecb76df676))
 
 ## 1.0.0 (2025-09-16)
 
-
 ### Features
 
-* **action:** set up maestro cli ([a8d3fd4](https://github.com/remarkablemark/setup-maestro/commit/a8d3fd440d4f3507cac13cc8e4f0362eb1435917))
+- **action:** set up maestro cli ([a8d3fd4](https://github.com/remarkablemark/setup-maestro/commit/a8d3fd440d4f3507cac13cc8e4f0362eb1435917))
