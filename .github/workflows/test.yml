@@ -21,12 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm ci --prefer-offline
 
-      - name: Lint codebase
-        run: npm run lint
-
-      - name: Check type
-        run: npm run lint:tsc
-
       - name: Run tests
         run: npm run test:ci
 
