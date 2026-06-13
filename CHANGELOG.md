@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.16](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.15...v1.0.16) (2026-06-13)
+
+
+### Build System
+
+* **deps:** bump maestro from 2.6.0 to 2.6.1 ([f09c8bb](https://github.com/remarkablemark/setup-maestro-cli/commit/f09c8bbfbee1f6c999e1aa7ea4300e08b2fe6eab))
+
 ## [1.0.15](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.14...v1.0.15) (2026-05-22)
 
 
