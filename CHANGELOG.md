@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.19](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.18...v1.0.19) (2026-08-01)
+
+
+### Build System
+
+* **deps:** bump maestro from 2.7.0 to 2.8.0 ([#269](https://github.com/remarkablemark/setup-maestro-cli/issues/269)) ([b722656](https://github.com/remarkablemark/setup-maestro-cli/commit/b722656b6a919516226938a6d19164636ecb72aa))
+
 ## [1.0.18](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.17...v1.0.18) (2026-07-21)
 
 
