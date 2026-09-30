@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.24](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.23...v1.0.24) (2026-09-30)
+
+
+### Build System
+
+* **deps:** bump undici from 6.28.0 to 6.29.0 ([#325](https://github.com/remarkablemark/setup-maestro-cli/issues/325)) ([6d5917f](https://github.com/remarkablemark/setup-maestro-cli/commit/6d5917ff6d23458e44878845f0f1df5c7878e11c))
+
 ## [1.0.23](https://github.com/remarkablemark/setup-maestro-cli/compare/v1.0.22...v1.0.23) (2026-09-30)
 
 
