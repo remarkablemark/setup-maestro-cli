@@ -40,12 +40,12 @@ See [action.yml](action.yml)
 
 ### `version`
 
-**Optional**: The CLI [version](https://github.com/mobile-dev-inc/Maestro/releases). Defaults to [`2.12.1`](https://github.com/mobile-dev-inc/Maestro/releases/tag/cli-2.12.1):
+**Optional**: The CLI [version](https://github.com/mobile-dev-inc/Maestro/releases). Defaults to [`2.13.0`](https://github.com/mobile-dev-inc/Maestro/releases/tag/cli-2.13.0):
 
 ```yaml
 - uses: remarkablemark/setup-maestro-cli@v1
   with:
-    version: 2.12.1
+    version: 2.13.0
 ```
 
 ## License
